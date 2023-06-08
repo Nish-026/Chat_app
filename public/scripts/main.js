@@ -5,7 +5,7 @@ const userList= document.getElementById("users");
 const url="https://chat-app-igg9.onrender.com"
 const urlParams= new URLSearchParams(window.location.search);
 const username= urlParams.get('username');
-const socket= io("url",{transports:["websocket"]});
+const socket= io(`${url}`,{transports:["websocket"]});
 socket.emit("joinRoom",({username}));
 socket.on("message",(message)=>{
     outputMessage(message)
