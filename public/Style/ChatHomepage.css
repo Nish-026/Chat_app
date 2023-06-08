@@ -1,0 +1,12 @@
+#username_form{
+    border: 1px solid rgb(7, 7, 7);
+    width: 30%;
+    margin: auto;
+    margin-top:50px;
+    padding:50px;
+    background-color:rgb(234, 138, 175)
+}
+#heading{
+    text-align: center;
+    margin-top:50px;
+}
